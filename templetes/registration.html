@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main1
+        {
+            margin-left: 30px;
+        }
+        #img
+        {filter: blur(3px);
+            width: 1097px;
+    height: 636px;
+        }
+        .heading
+{text-align: center;
+    color:blue;
+    padding: 20px;
+    margin-top:20px ;
+}
+
+.main
+{color:whitesmoke;
+    left: 50%;
+    top: 60%;
+    background-color: rgba(15, 73, 73, 0.555);
+    text-decoration: brown;
+    position: absolute;
+    padding: 25px;
+    font-size: 18px;
+    margin-left: -9%;
+    margin-top: -20%;
+font-family:  'Arial Narrow Bold', sans-serif;
+}
+
+.main input
+{color:black;
+    vertical-align: top;
+font-size: medium;
+left: 50%;
+    top: 50%;
+    margin-top: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+.course
+{
+    text-align: right;
+}
+.main  label{
+    display: inline-block;
+    width: 100px;
+
+}
+    </style>
+</head>
+<body id="a" style='background-image:url("E:\keywordio_project\library\download.jpg");'>
+    <div class="main1"><h2 class="heading"> ADMIN REGISTRATION
+    <img src="E:\keywordio_project\library\download.jpg" id="img">
+
+    </h2>
+
+<table border="1" class="main">
+        <div class="maindiv">
+            <span class="b">
+        <form method="post" action="#">
+            {% csrf_token %}
+            
+           <tr><td><label><b>First_Name:</b></label>
+            <input type="text" name="fname" placeholder="First Name"><br><br></td></tr>
+            <tr><td> <label><b>Email_Id:</b></label>
+            <input type="text" name="email" placeholder="Email"><br><br></td></tr>
+               
+            <tr><td>  <label><b>Password:</b></label>
+            <input type="password" name="password" placeholder="Password"><br><br></td></tr>
+            
+            
+            <tr><td>  <input type="submit" name="submit" placeholder="submit data">
+        
+<a href="loginaction">Login</a></td></tr>
+        </form>
+        </span>
+        </div>
+        </table>
+    </div>
+</body>
+</html>
